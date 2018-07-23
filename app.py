@@ -10,9 +10,9 @@ from citipy import citipy
 from config import weather_api_key
 
 # Function to generate cities list
-def generate_cities_list():
+def generate_cities_list(num):
     city_list = []
-    for i in range(600):
+    for i in range(num):
         random_latitude = random.randrange(-90,90)
         random_longitude = random.randrange(-180,180)
         city = citipy.nearest_city(random_latitude, random_longitude).city_name
@@ -119,7 +119,7 @@ def plot_windvslat(weather_df):
 
 # Main function
 def main():
-    cities = generate_cities_list()
+    cities = generate_cities_list(600)
     data = getWeather(cities)
     df = pd.DataFrame(data)
     

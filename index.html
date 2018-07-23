@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Weather Dashboard - Home</title>
+    <title>Weather Dashboard | Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
@@ -38,19 +38,30 @@
 <div class="container">
     <header class="header">
         <br><h1>WeatherPy Dashboard</h1>
-    </header>
-    <main>
         <small class="text-muted">
             <p><strong>Project Description:</strong> Visualizing the weather of 500+ cities across the world of varying distance from the equator.</p>
         </small>
+    </header>
+    <main>
         <hr>
-        <h4>Analysis</h4>
-        <ul>
-            <li>Based on these data, there appears to be a strong relationship between temperature and distance from the equator resulting in higher temperatures in cities that are closer to the equator.</li>
-            <li>There appears to be a weak relationship between humidity and latitude, in which cities near the equator and the poles have higher humidity levels, with the cities midway between the equator and poles having lower humidity levels.</li>
-            <li>There also appears to be a weak relationship between wind speed and latitude, in which wind speed appears to increase with distance from the equator.</li>
-        </ul>
-      <hr>
+        <section>
+            <h4>Data Visualizations</h4>
+            <a target="_blank" href="viz1.html"><img src="assets/images/temp_vs_lat copy.png" alt="Temp vs Latitude" height="120" width="160"></a>
+            <a target="_blank" href="viz2.html"><img src="assets/images/humidity_vs_lat copy.png" alt="Humidity vs Latitude" height="120" width="160"></a>
+            <a target="_blank" href="viz3.html"><img src="assets/images/cloud_vs_lat copy.png" alt="Cloudiness vs Latitude" height="120" width="160"></a>
+            <a target="_blank" href="viz4.html"><img src="assets/images/wind_vs_lat copy.png" alt="Wind vs Latitude" height="120" width="160"></a>
+        </section>
+        <hr>
+        <section>
+            <h4>Analysis</h4>
+            <ul>
+                <li>Based on these data, there appears to be a strong relationship between temperature and distance from the equator resulting in higher temperatures in cities that are closer to the equator.</li>
+                <li>There appears to be a weak relationship between humidity and latitude, in which cities near the equator and the poles have higher humidity levels, with the cities midway between the equator and poles having lower humidity levels.</li>
+                <li>There also appears to be a weak relationship between wind speed and latitude, in which wind speed appears to increase with distance from the equator.</li>
+            </ul>
+        </section>
+    </main>
+    <hr>
     <aside id="contact-info">
         <h4>Additional Links & Info</h4>
         <ul>
@@ -59,7 +70,6 @@
             <li><strong>Portfolio:</strong> <a href="#">coming soon</a></li>
         </ul>
     </aside> 
-    </main>
   </div>
   
 </body>
