@@ -1,195 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <title>Weather Dashboard</title>
-  <link rel="stylesheet" href="reset.css">
-  <!-- <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css"> -->
-  <!-- <link rel="stylesheet" href="https://bootswatch.com/4/sandstone/bootstrap.min.css"> -->
-  <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css">
-  <link rel="stylesheet" href="styles.css">
+    <title>Weather Dashboard - Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
 </head>
-
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <a class="navbar-brand" href="#">WeatherPy</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="true" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="navbar-collapse collapse show" id="navbarColor01" style="">
-                <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-                </form>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="index.html">WeatherPy</a>
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+            <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 42px, 0px);">
+                <a class="dropdown-item" href="viz1.html">Plot 1</a>
+                <a class="dropdown-item" href="viz2.html">Plot 2</a>
+                <a class="dropdown-item" href="viz3.html">Plot 3</a>
+                <a class="dropdown-item" href="viz4.html">Plot 4</a>
             </div>
-            </nav>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="comparisons.html">Comparisons</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="data.html">Data</a>
+        </li>
+    </ul>
+</nav>
 
-
-
-
-
-
-
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <a class="navbar-brand" href="index.html">WeatherPy</a>
-        <!-- <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"> -->
-          <!-- <span class="navbar-toggler-icon"></span> -->
-        <!-- </button> -->
-      
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="true" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-
-        <div class="navbar-collapse collapse" id="navbarResponsive" style>
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-
-            <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="viz1.html">Visualizations <span class="caret"></span>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="viz1.html">Plot 1</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="viz2.html">Plot 2</a>
-                        <a class="dropdown-item" href="viz3.html">Plot 3</a>
-                        <a class="dropdown-item" href="viz4.html">Plot 4</a>
-                    </div>
-                    </a>
-                    </li>
-            <li class="nav-item">
-                    <a class="nav-link" href="comparisons.html">Comparisons</a>
-                        </li>
-            <li class="nav-item">
-                <a class="nav-link" href="data.html">Data</a>
-                </li>
-            <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#">Link 3</a>
-                    </div>
-                    </div>
-        </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search">
-            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
-      </nav>
-
-      <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="#">Link 1</a>
-              <a href="#">Link 2</a>
-              <a href="#">Link 3</a>
-            </div>
-          </div>
-
-    <div class="container">
-
-      <header class="header">
-        <br><br>
-        <h1>Visualizations</h1> 
-      </header>
-      <hr>
-
+<div class="container">
+    <header class="header">
+        <br><h1>Plot 1</h1> 
+        <hr>
+    </header>
     <main>
-   
-      <section>
-          
-          <article>
-                <h5>Temperature vs. City Latitude</h5>
-                <small class="text-muted">with muted text</small>
-                <br>
-                <a target="_blank" href="assets/images/temp_vs_lat copy.png">
-                <img src="assets/images/temp_vs_lat copy.png" alt="Temp vs Latitude">
-                </a>
-            <!-- <p><em>Cloudy Map</em></p> -->
-            </article>
-            <hr>
-            <article>
-                <h5>Humidity vs. City Latitude</h5>
-                <small class="text-muted">with muted text</small>
-                <br>
-                <a target="_blank" href="assets/images/humidity_vs_lat copy.png">
-                <img src="assets/images/humidity_vs_lat copy.png" alt="Humidity vs Latitude">
-                </a>
-            </article>
-            <hr>
-            <article>
-                <h5>Cloudiness vs. City Latitude</h5>
-                <small class="text-muted">with muted text</small>
-                <br>
-                <a target="_blank" href="assets/images/cloud_vs_lat copy.png">
-                <img src="assets/images/cloud_vs_lat copy.png" alt="Cloudiness vs Latitude">
-                </a>
-              <!-- <p><em>Temperature Map</em></p> -->
-            </article>
-            <hr>
-            <!-- an example using figure/ficaption -->
-            <figure>
-                <h5>Wind Speed vs. City Latitude</h5>
-                <small class="text-muted">with muted text</small>
-                <br>
-                <a target="_blank" href="assets/images/wind_vs_lat copy.png">
-                <img src="assets/images/wind_vs_lat copy.png" alt="Wind vs Latitude">
-                </a>
-              <figcaption><em>Wind Map</em></figcaption>
-            </figure>
-          </section>
-
-        </main>
-    </div>
-  
-    
-
-    
-
-
-    <script>
-            /* When the user clicks on the button, 
-            toggle between hiding and showing the dropdown content */
-            function myFunction() {
-                document.getElementById("myDropdown").classList.toggle("show");
-            }
-            
-            // Close the dropdown if the user clicks outside of it
-            window.onclick = function(event) {
-              if (!event.target.matches('.dropbtn')) {
-            
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                  var openDropdown = dropdowns[i];
-                  if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                  }
-                }
-              }
-            }
-            </script>
-
-
+    <section>
+        <article>
+            <h4>Temperature vs. City Latitude</h4>
+            <!-- <p>Based on these data, there appears to be a strong relationship between temperature and distance from the equator resulting in higher temperatures in cities that are closer to the equator.</p> -->
+            <a target="_blank" href="assets/images/temp_vs_lat copy.png">
+            <img src="assets/images/temp_vs_lat copy.png" alt="Temp vs Latitude">
+            </a>
+            <br><br>
+        </article>
+    </section>
+    </main>
+</div>
 
 </body>
   
